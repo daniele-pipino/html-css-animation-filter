@@ -109,9 +109,42 @@
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon{
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+    /* esercizio 11 */
+}
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: semirotation 3s linear 1;
+}
+
+@keyframes semirotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(300deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+    
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
